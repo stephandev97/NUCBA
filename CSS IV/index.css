@@ -1,0 +1,87 @@
+html, body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    font-size: 16px;
+    background: #390099;
+}
+
+.container {
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recuadro-login {
+    width: 50%; 
+    height: 60%;
+    display: flex;
+    background: #FF0054;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container-form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-input {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    align-items: center;
+    width: 100%;
+}
+
+label {
+    color: white;
+    margin-bottom: 5px;
+    width: 70%;
+    text-align: left;
+}
+
+input {
+    width: 70%;
+    border-radius: 20px;
+    height: 40px;
+    border: none;
+    padding: 20px;
+    font-family: "Quicksand", sans-serif;
+}
+
+button {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: #202157;
+    color: white;
+    border: none;
+    width: 70%;
+    height: 45px;
+    border-radius: 20px;
+}
+
+.container-img {
+    width: 50%;
+    background-image: url('https://cdn141.picsart.com/309256231011211.png?type=webp&to=min&r=640');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
