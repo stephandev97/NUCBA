@@ -230,22 +230,22 @@ button:hover {
     }
 
     button {
-        width: 40%;
-        font-size: 1em;
+        width: 38%;
+        font-size: 0.8em;
+        height: 50px;
     }
 
     .container-work {
-        width: 100%;
-        margin-top: 110px;
+        width: 90%;
     }
 
     .column-item h3{
-        font-size: 0.9em;
+        font-size: 0.8em;
         text-transform: uppercase;
     }
 
     .column-item p {
-        font-size: 0.8em;
+        font-size: 0.6em;
     }
 
     .container-work h2 {
@@ -254,5 +254,76 @@ button:hover {
 
     .container-work > p {
         font-size: 0.8em;
+    }
+
+    .separador {
+        margin-top: 50px;
+        margin-bottom: 50px;;
+    }
+}
+
+@media (max-width: 320px) {
+    .name-navbar {
+        display: none;
+    }
+
+    .nav-list li {
+        font-size: 0.55em;
+    }
+
+    .container-hero {
+        padding: 0px 10px;
+        margin-top: 80px;
+    }
+
+    .container-hero h1 {
+        font-size: 2.5em;
+    }
+
+    .container-hero p {
+        font-size: 2em;
+    }
+
+    button {
+        width: 40%;
+        font-size: 0.8em;
+        margin-right: 5px;
+        height: 50px;
+    }
+
+    #table-2 {
+        flex-flow: row wrap;
+    }
+
+    #table-1 {
+        margin-top: 5px;
+    }
+
+    #column-2 {
+        margin-top: 5px;
+    }
+    .column-item {
+        margin-top: 40px;
+    }
+    .column-item h3{
+        font-size: 0.8em;
+        text-transform: uppercase;
+    }
+
+    .column-item p {
+        font-size: 0.6em;
+    }
+
+    .container-work h2 {
+        font-size: 2em;
+    }
+
+    .container-work > p {
+        font-size: 0.6em;
+    }
+
+    .separador {
+        margin-top: 50px;
+        margin-bottom: 50px;;
     }
 }
