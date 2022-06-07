@@ -208,7 +208,7 @@ button:hover {
     
 }
 
-@media (max-width: 425px) {
+@media (max-width: 580px) {
     .name-navbar {
         display: none;
     }
@@ -237,6 +237,10 @@ button:hover {
 
     .container-work {
         width: 90%;
+    }
+
+    .table-advantages {
+        gap: 0px 5px;
     }
 
     .column-item h3{
