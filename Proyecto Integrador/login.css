@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Faustina:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: black;
+}
+
+/* NAVBAR */
+
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 7vh;
+    background-color: black;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.navbar a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.atajos-navbar {
+    margin: 0 0.5vw;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar-center span {
+    margin-left: 8px;
+    font-size: 1.8em;
+    text-shadow: 3px 2px 0 #292929;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.btn-login {
+    background: rgb(253, 253, 242);
+    padding: 1.5vh 1.5vw;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 700;
+    margin: 0 0.5vw;
+}
+
+.btn-home {
+    color: white;
+}
+
+.btn-login:hover {
+    background: #9fe7bf;
+    transition: 0.3s;
+    color: black;
+}
+
+/* CONTAINER */
+
+.container-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid black;
+    color: white;
+    background-color: black;
+}
+
+.box-form {
+    display: flex;
+    width: 35%;
+    height: 60%;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: black;
+    background-color: white;
+    border-radius: 6px;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 40px;
+}
+
+.box-form h2 {
+    font-size: 2.5vw;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.box-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+    margin-bottom: 0;
+}
+
+.btn-social {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+    height: 50px;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.btn-social i {
+    margin-right: 8px;
+}
+
+#facebook {
+    background-color: #375A94;
+}
+
+#google {
+    background-color: white;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.form-login label {
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.4em;
+    margin-top: 15px;
+}
+
+.form-login input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 1.4em;
+}
+
+.form-login button {
+    width: 100%;
+    font-family: "Josefin Sans", sans-serif;
+    height: 60px;
+    margin-top: 40px;
+    color: white;
+    background-color: black;
+    font-size: 1.2vw;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-login button:hover {
+    border: 2px solid black;
+    background: #9fe7bf;
+    transition: 1s;
+    color: black;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 1.7vw;
+    }
+
+    .box-form {
+        width: 60%;
+    }
+    .box-form h2 {
+        font-size: 5vw;
+    }
+
+    .btn-social {
+        font-size: 2vw;
+    }
+
+    .form-login button {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 425px) {
+    .navbar {
+        font-size: 4vw;
+    }
+
+    #text-button {
+        display: none;
+    }
+
+    .atajos-navbar {
+        display: none;
+    }
+
+    .btn-inicio {
+        display: contents;
+    }
+
+    .btn-home {
+        background: rgb(253, 253, 242);
+        padding: 1.5vh 4vw;
+        color: black;
+        border-radius: 4px;
+        font-weight: 700;
+        margin: 0 0.5vw;
+    }
+
+    .btn-home:hover {
+        background: #9fe7bf;
+        transition: 0.3s;
+        color: black;
+    }
+
+    .btn-login {
+        padding: 1.5vh 4vw;
+    }
+
+    .icon-btn-nav {
+        display: contents;
+    }
+
+    .icon-btn-home {
+        display: contents;
+    }
+
+    .box-form {
+        width: 90%;
+        height: 50%;
+    }
+
+    .box-form h2 {
+        font-size: 5vw;
+        margin-top: 10px;
+    }
+
+    .btn-social {
+        margin-top: 10px;
+        font-size: 3vw;
+    }
+
+    .form-login button {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 320px) {
+    .box-form {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .box-form h2 {
+        font-size: 7vw;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .form-login button {
+        font-size: 5vw;
+    }
+
+    .btn-social {
+        margin-top: 10px;
+        font-size: 4vw;
+    }
+}
+
+
+
+

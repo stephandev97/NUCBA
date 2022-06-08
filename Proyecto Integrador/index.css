@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Faustina:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    font-family: 'Faustina', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: black;
+}
+
+/* NAVBAR */
+
+header {
+    height: 50%;
+}
+
+.navbar {
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 7vh;
+    background-color: black;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.navbar a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.atajos-navbar {
+    margin: 0 0.5vw;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar-center span {
+    margin-left: 8px;
+    font-size: 1.8em;
+    text-shadow: 3px 2px 0 #292929;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.btn-login {
+    background: rgb(253, 253, 242);
+    padding: 1.5vh 1.5vw;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 700;
+    margin: 0 0.5vw;
+}
+
+.btn-login:hover {
+    background: #9fe7bf;
+    transition: 0.3s;
+    color: black;
+}
+
+
+/* SECTION-TITLE */
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid black;
+    color: white;
+    background-color: black;
+}
+
+.background-title {
+    background-image: url('img/background-pizza.jpg');
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.text-title {
+    position: absolute;
+    text-align: center;
+}
+
+.text-title h1 {
+    font-size: 7.5rem;
+    margin-bottom: 0;
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 10px;
+    text-shadow: 5px 4px 0 #111111;
+    color: #FDFDF2;
+
+}
+
+.text-title p {
+    font-size: 2.8rem;
+    font-style: italic;
+    margin: 0 auto;
+    font-weight: 200;
+}
+
+.text-title span {
+    font-size: 2rem;
+}
+
+/* CONTAINER PRODUCTS */
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh 0;
+    width: 100%;
+}
+
+.border-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 65%;
+    border: 3px solid #FDFDF2;
+}
+
+.products-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px dashed #FDFDF2;
+    width: 100%;
+}
+
+.title-products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 4em;
+    text-transform: uppercase;
+    font-family: 'DM Serif Display', serif;
+}
+
+.title-products h2 {
+    margin: 30px 0;
+    color: #FDFDF2;
+}
+
+.title-decoration {
+    width: 13vw;
+    height: 3px;
+    background: #FDFDF2;
+    margin: 0px 30px;
+}
+
+.list-pizzas {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+.img-card {
+    width: 18vw;
+    text-align: center;
+}
+
+.card-pizza {
+    width: 30%;
+    text-align: center;
+    font-size: 2em;
+    line-height: 0.5;
+}
+
+.card-pizza h3 {
+    text-transform: uppercase;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 0;
+    color: white;
+}
+
+.card-pizza p {
+    font-size: 1em;
+    line-height: 30px;
+    font-style: italic;
+    color: white;
+}
+
+/* SECCION PEDIR*/
+
+.section-pedir {
+    margin: 50px 0px;
+    width: 67%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    width: 67%;
+    background: #FDFDF2;
+    margin: 0px 20px;
+    border-radius: 5px;
+}
+
+.btn-pedir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    font-size: 2.5vw;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.border-btn:hover {
+    background: #9fe7bf;
+    transition: 0.3s;
+    color: black;
+}
+
+.border-pedir {
+    width: 30%;
+    background: #FDFDF2;
+    height: 2px;
+}
+
+/* SECCION CONTACTO*/
+
+.section-contact {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    font-size: 3vw;
+    margin-top: 100px;
+    flex-wrap: wrap-reverse;
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.section-contact h3 {
+    margin: 10px 0;
+}
+
+.column-left p {
+    font-size: 1.5vw;
+    font-style: italic;
+}
+
+.buttons-redes {
+    margin-top: 30px;
+}
+
+.btn-contact {
+    padding: 5px 15px;
+    background: white;
+    border-radius: 20%;
+    color: black;
+    cursor: pointer;
+}
+
+.btn-contact:hover {
+    background: black;
+    color: white;
+    border: 3px solid white;
+    transition: 1s;
+}
+
+.column-right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    height: 80%;
+}
+
+.form-contact input {
+    margin: 5px 0;
+    height: 50px;
+    border: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1vw;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.form-contact textarea {
+    margin: 5px 0;
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1vw;
+    height: 90%;
+    padding: 15px;
+    resize: none;
+    border-radius: 5px;
+}
+
+.form-contact button {
+    width: 100%;
+    font-family: "Josefin Sans", sans-serif;
+    height: 100px;
+    margin-top: 10px;
+    background-color: ligthgrey;
+    font-size: 1.4vw;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.form-contact button:hover {
+    border: 2px solid black;
+    background: #9fe7bf;
+    transition: 1s;
+    color: black;
+    font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        font-size: 1.7vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 1.7vw;
+    }
+
+    .text-title h1 {
+        font-size: 12vw;
+    }
+
+    .text-title p {
+        font-size: 5vw;
+    }
+
+    .title-products h2 {
+        margin: 20px 0;
+        font-size: 8vw;
+    }
+
+    .title-decoration {
+        width: 16vw;
+    }
+
+    .card-pizza h3 {
+        font-size: 4vw;
+    }
+
+    .card-pizza p {
+        font-size: 0.8em;
+    }
+
+    .section-contact {
+        width: 70%;
+        font-size: 4vw;
+    }
+
+    .column-right {
+        width: 60%;
+    }
+
+    .form-contact input {
+        font-size: 0.4em;
+    }
+
+    .form-contact textarea {
+        font-size: 0.4em;
+    }
+
+    .section-pedir {
+        width: 80%;
+    }
+
+    .border-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        width: 90%;
+        background: #FDFDF2;
+        margin: 0px 20px;
+    }
+
+    .btn-pedir {
+        width: 100%;
+        height: 60px;
+        font-size: 3.2vw;
+    }
+
+    .border-pedir {
+        width: 50%;
+        background: #FDFDF2;
+        height: 4px;
+    }
+}
+
+@media (max-width: 770px) {
+    header {
+        height: 35%;
+    }
+
+    .navbar {
+        font-size: 2vw;
+    }
+
+    .atajos-navbar {
+        display: none;
+    }
+
+    .btn-home {
+        background: rgb(253, 253, 242);
+        padding: 1.5vh 4vw;
+        color: black;
+        border-radius: 4px;
+        font-weight: 700;
+        margin: 0 0.5vw;
+    }
+
+    .btn-home:hover {
+        background: #9fe7bf;
+        transition: 0.3s;
+        color: black;
+    }
+
+    .btn-login {
+        padding: 1.5vh 4vw;
+    }
+
+    .border-list {
+        width: 80%;
+        height: 90%;
+    }
+
+    .products-box {
+        height: 100%;
+    }
+
+    .text-title h1 {
+        font-size: 8vw;
+        line-height: 70px;
+    }
+
+    .text-title p {
+        font-size: 5vw;
+    }
+
+    .title-products h2 {
+        margin: 20px 0;
+        font-size: 8vw;
+    }
+
+    .title-decoration {
+        width: 18vw;
+    }
+
+    .card-pizza h3 {
+        font-size: 4vw;
+    }
+
+    .card-pizza p {
+        font-size: 0.4em;
+        line-height: 17px;
+    }
+
+
+
+    .section-contact {
+        width: 100%;
+        font-size: 4vw;
+        margin-top: 0;
+    }
+
+    .column-right,
+    .column-left {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-contact {
+        width: 60%;
+    }
+
+    .form-contact input {
+        font-size: 0.4em;
+        height: 5px;
+    }
+
+    .form-contact textarea {
+        font-size: 0.4em;
+    }
+
+    .section-pedir {
+        width: 80%;
+    }
+
+    .border-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        width: 90%;
+        background: #FDFDF2;
+        margin: 0px 20px;
+    }
+
+    .btn-pedir {
+        width: 100%;
+        height: 40px;
+        font-size: 3.2vw;
+    }
+
+    .border-pedir {
+        width: 50%;
+        background: #FDFDF2;
+        height: 4px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .text-title h1 {
+        font-size: 17vw;
+        line-height: 60px;
+    }
+
+    .border-list {
+        width: 90%;
+    }
+
+    .section-pedir {
+        width: 90%;
+    }
+
+    .border-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        width: 90%;
+        background: #FDFDF2;
+        margin: 0px 20px;
+    }
+
+    .btn-pedir {
+        width: 100%;
+        height: 40px;
+        font-size: 3.2vw;
+    }
+
+    .border-pedir {
+        width: 50%;
+        background: #FDFDF2;
+        height: 4px;
+    }
+}
