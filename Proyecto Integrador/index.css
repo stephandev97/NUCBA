@@ -432,13 +432,16 @@ header {
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 768px) {
     header {
         height: 35%;
     }
 
     .navbar {
-        font-size: 2vw;
+        font-size: 2.5vw;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
     }
 
     .atajos-navbar {
@@ -474,8 +477,8 @@ header {
     }
 
     .text-title h1 {
-        font-size: 8vw;
-        line-height: 70px;
+        font-size: 10vw;
+        line-height: 100px;
     }
 
     .text-title p {
@@ -504,12 +507,19 @@ header {
 
     .section-contact {
         width: 100%;
-        font-size: 4vw;
+        font-size: 5vw;
         margin-top: 0;
     }
 
-    .column-right,
-    .column-left {
+    .section-contact h3{
+        font-size: 8vw;
+    }
+
+    .section-contact p{
+        font-size: 4vw;
+    }
+
+    .column-right, .column-left {
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -521,12 +531,17 @@ header {
     }
 
     .form-contact input {
-        font-size: 0.4em;
-        height: 5px;
+        font-size: 0.5em;
+        height: 10px;
+        margin: 10px 0;
     }
 
     .form-contact textarea {
-        font-size: 0.4em;
+        font-size: 0.5em;
+    }
+
+    .form-contact button {
+        font-size: 0.6em;
     }
 
     .section-pedir {
@@ -538,7 +553,7 @@ header {
         justify-content: center;
         align-items: center;
         padding: 3px;
-        width: 90%;
+        width: 100%;
         background: #FDFDF2;
         margin: 0px 20px;
     }
@@ -546,11 +561,149 @@ header {
     .btn-pedir {
         width: 100%;
         height: 40px;
-        font-size: 3.2vw;
+        font-size: 3.8vw;
     }
 
     .border-pedir {
-        width: 50%;
+        width: 40%;
+        background: #FDFDF2;
+        height: 4px;
+    }
+}
+
+@media (max-width: 425px) {
+    header {
+        height: 35%;
+    }
+
+    .navbar {
+        font-size: 3vw;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .atajos-navbar {
+        display: none;
+    }
+
+    .btn-home {
+        background: rgb(253, 253, 242);
+        padding: 1.5vh 4vw;
+        color: black;
+        border-radius: 4px;
+        font-weight: 700;
+        margin: 0 0.5vw;
+    }
+
+    .btn-home:hover {
+        background: #9fe7bf;
+        transition: 0.3s;
+        color: black;
+    }
+
+    .btn-login {
+        padding: 1.5vh 4vw;
+    }
+
+    .border-list {
+        width: 80%;
+        height: 90%;
+    }
+
+    .products-box {
+        height: 100%;
+    }
+
+    .text-title h1 {
+        font-size: 15vw;
+        line-height: 60px;
+    }
+
+    .text-title p {
+        font-size: 5vw;
+    }
+
+    .title-products h2 {
+        margin: 20px 0;
+        font-size: 8vw;
+    }
+
+    .title-decoration {
+        width: 18vw;
+    }
+
+    .card-pizza h3 {
+        font-size: 4vw;
+    }
+
+    .card-pizza p {
+        font-size: 0.4em;
+        line-height: 17px;
+    }
+
+
+
+    .section-contact {
+        width: 100%;
+        font-size: 5vw;
+        margin-top: 0;
+    }
+
+    .section-contact h3{
+        font-size: 8vw;
+    }
+
+    .section-contact p{
+        font-size: 4vw;
+    }
+
+    .column-right, .column-left {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-contact {
+        width: 60%;
+    }
+
+    .form-contact input {
+        font-size: 0.5em;
+        height: 8px;
+    }
+
+    .form-contact textarea {
+        font-size: 0.5em;
+    }
+
+    .form-contact button {
+        font-size: 0.6em;
+    }
+
+    .section-pedir {
+        width: 80%;
+    }
+
+    .border-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        width: 100%;
+        background: #FDFDF2;
+        margin: 0px 20px;
+    }
+
+    .btn-pedir {
+        width: 100%;
+        height: 40px;
+        font-size: 3.8vw;
+    }
+
+    .border-pedir {
+        width: 40%;
         background: #FDFDF2;
         height: 4px;
     }
