@@ -236,6 +236,8 @@ header {
     font-size: 2.5vw;
     cursor: pointer;
     font-weight: 700;
+    color: black;
+    text-decoration: none;
 }
 
 .border-btn:hover {
@@ -511,15 +513,16 @@ header {
         margin-top: 0;
     }
 
-    .section-contact h3{
+    .section-contact h3 {
         font-size: 8vw;
     }
 
-    .section-contact p{
+    .section-contact p {
         font-size: 4vw;
     }
 
-    .column-right, .column-left {
+    .column-right,
+    .column-left {
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -650,15 +653,16 @@ header {
         margin-top: 0;
     }
 
-    .section-contact h3{
+    .section-contact h3 {
         font-size: 8vw;
     }
 
-    .section-contact p{
+    .section-contact p {
         font-size: 4vw;
     }
 
-    .column-right, .column-left {
+    .column-right,
+    .column-left {
         justify-content: center;
         align-items: center;
         width: 100%;
