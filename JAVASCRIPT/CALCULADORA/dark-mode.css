@@ -1,0 +1,40 @@
+.dark-mode {
+    background-color: #1d1d1d;
+    transition: background-color 1s;
+}
+
+.dark-mode .calculadora{
+    background-color: #242627;
+    transition: 1s;
+}
+
+.dark-mode button {
+    background-color: #282d31;
+    color: white;
+    transition: 1s; 
+}
+
+.dark-mode .display {
+    background-color: #282D31;
+    color: white;
+    transition: 1s;
+}
+
+.dark-mode .btn-pink {
+    background-color: #d19db9;
+    color: black;
+}
+
+.dark-mode .btn-change {
+    background-color: rgb(224, 220, 161);
+    color: black;
+    transition: 1s;
+}
+
+.dark-mode .div-superior {
+    background: #252525;
+}
+
+.dark-mode .solar-bat {
+    background-color: #3b3b3b;
+}
