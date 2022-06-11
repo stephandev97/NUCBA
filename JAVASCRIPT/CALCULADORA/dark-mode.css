@@ -1,21 +1,26 @@
 .dark-mode {
-    background-color: #1d1d1d;
+    background-color: #282230;
     transition: background-color 1s;
 }
 
 .dark-mode .calculadora{
-    background-color: #242627;
+    background-color: #241f2b;
     transition: 1s;
 }
 
 .dark-mode button {
-    background-color: #282d31;
+    background-color: #342a42;
     color: white;
     transition: 1s; 
 }
 
+.dark-mode button:active {
+    font-size: 20px;
+    background: #313030;
+}
+
 .dark-mode .display {
-    background-color: #282D31;
+    background-color: #342a42;
     color: white;
     transition: 1s;
 }
@@ -32,9 +37,9 @@
 }
 
 .dark-mode .div-superior {
-    background: #252525;
+    background: #383141;
 }
 
 .dark-mode .solar-bat {
-    background-color: #3b3b3b;
+    background-color: #2f2631;
 }
