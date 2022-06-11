@@ -179,3 +179,5 @@ auto.mostrarvelocidad = function() {
     console.log(auto.velocidad);
 }
 //auto.mostrarvelocidad();
+
+
