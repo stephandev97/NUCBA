@@ -7,7 +7,7 @@
     "format": "prettier \"src/**/*.{js, html, css}\" --write",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint \"src/**/*.{js, jsx}\"",
-    "build": "next build --output public"
+    "build": "react build --output public"
   },
   "keywords": [],
   "author": "",
