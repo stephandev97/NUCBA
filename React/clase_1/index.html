@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autitos</title>
+</head>
+
+<body>
+    <div id="root">not rendered</div>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <style>
+        body {
+            color: peru;
+        }
+    </style>
+    <script>
+        //ACA VA REACT
+        const Cars = ({marca, modelo, tipo}) => {
+            return React.createElement('div', {}, [
+                React.createElement('h2', {}, marca),
+                React.createElement('h3', {}, modelo),
+                React.createElement('h4', {}, tipo),
+            ]);
+        }
+
+        const Title = () => {
+            return React.createElement('h1', { id: 'lalala' }, 'Autos Chetos!!');
+        }
+
+        const Button = ({logClick}) => {
+            return React.createElement('button', { onClick: logClick }, 'Click!!');
+    }
+
+        const App = () => {
+            const logClick = () => {
+                console.log('Hey!!!')
+            }
+            //elemento HTML - Atributos de un elemento como {} - Hijos que pueda llegar a tener
+            return React.createElement('div', {}, [
+                React.createElement(Title, {}, []),
+                React.createElement(Cars, {
+                    marca: 'Ford',
+                    modelo: 'Fiesta',
+                    tipo: 'Sedan'
+                }, []),
+                React.createElement(Cars, {
+                    marca: 'Chevrolet',
+                    modelo: 'Cruze',
+                    tipo: 'Sedan'
+                }, []),
+                React.createElement(Cars, {
+                    marca: 'Fiat',
+                    modelo: 'Punto',
+                    tipo: 'Sedan'
+                }, []),
+                React.createElement(Button, { logClick }),
+            ]);
+        };
+
+        ReactDOM.render(
+            React.createElement(App),
+            document.getElementById('root')
+        )
+
+    </script>
+</body>
+
+</html>
